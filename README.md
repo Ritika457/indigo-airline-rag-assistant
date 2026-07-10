@@ -2,13 +2,13 @@
 
 A Retrieval-Augmented Generation (RAG) system that answers customer queries about IndiGo airline policies — baggage, cancellation/refunds, check-in, and food — using semantic search over official policy documents, with grounded, citation-backed responses and hallucination prevention.
 
-## 🎯 Motivation
+##  Motivation
 
 Airline customer support chatbots need very high factual accuracy — an incorrectly stated baggage or cancellation policy can be costly (e.g., the 2024 Air Canada case where a chatbot's incorrect refund policy statement was legally binding on the airline). This project builds a domain-specific RAG pipeline with a strong grounding guardrail: the system explicitly says "I don't know" rather than fabricating an answer, and every response cites its source document.
 
 There is no existing public benchmark for airline-domain QA, so this project also includes a **custom evaluation framework** to measure retrieval quality.
 
-## 🏗️ Architecture
+##  Architecture
 
 User Query → Embedding → Vector Search (ChromaDB) → Top-K Chunks → LLM (grounded generation) → Answer + Citation
 
@@ -30,7 +30,7 @@ User Query → Embedding → Vector Search (ChromaDB) → Top-K Chunks → LLM (
 
 Recursive chunking gave the best precision, while fixed-size chunking most consistently ranked the correct source first. This highlights that "best" chunking strategy is metric-dependent, not universal — a key finding validated empirically rather than assumed.
 
-## 🚀 Running Locally
+##  Running Locally
 
 ```bash
 git clone <repo-url>
@@ -52,7 +52,7 @@ python src/evaluate.py
 streamlit run app.py
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 airline-rag-assistant/
 ├── data/                       # Policy documents + eval questions
@@ -72,7 +72,7 @@ airline-rag-assistant/
 - Evaluation set is a small (10-question) custom benchmark; results are directionally informative rather than statistically exhaustive given the small corpus size.
 - No live flight data integration — this is a policy/FAQ assistant, not a booking or live-status system (an explicit design choice to keep the scope focused on core RAG mechanics).
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Expand knowledge base coverage (special assistance, liability, denied boarding).
 - Add reranking step for improved precision.
