@@ -1,0 +1,47 @@
+IndiGo Cancellation, Rescheduling & Refund Policy (Plan B)
+=============================================================
+
+WHAT IS PLAN B?
+------------------
+Plan B is IndiGo's policy that allows passengers to change or cancel a flight at no additional cost when the disruption is caused by IndiGo itself (not the passenger).
+
+ELIGIBILITY FOR PLAN B
+--------------------------
+A booking is eligible for Plan B if any of the following apply:
+1. The flight has been cancelled by IndiGo.
+2. The flight departure time has been moved earlier by 1 hour or more from the originally scheduled time.
+3. The flight departure time has been postponed by 2 hours or more from the originally scheduled time.
+
+If a reschedule does not meet these thresholds (less than 1 hour earlier or less than 2 hours later), the booking is NOT eligible for Plan B.
+
+WHAT CAN A PASSENGER DO UNDER PLAN B?
+------------------------------------------
+- Change the date and/or time of the flight to a more convenient option, at no extra charge.
+- Cancel the booking and receive a full refund, at no extra charge.
+- Passengers are notified of Plan B eligibility via SMS, email, and/or phone call on their registered contact details. Eligibility is also shown when retrieving the itinerary online.
+
+IMPORTANT NOTES
+------------------
+- Plan B benefits are one-time: once availed, any further changes or cancellations to that booking will be charged as per standard IndiGo terms and conditions.
+- Plan B does NOT apply to voluntary cancellations or changes made by the passenger for personal reasons — those are subject to standard cancellation/change fees.
+
+REFUND PROCESSING
+--------------------
+- Once a refund is processed, the amount typically reflects in the passenger's account within 7 business days.
+- For bookings made through a travel agency, passengers must contact the agency directly to process refunds.
+- If a refund is not received within the stipulated 7 business days, passengers can contact IndiGo customer experience via email (customer.experience@goindigo.in) or live chat support.
+
+GENERAL CANCELLATION (PASSENGER-INITIATED)
+------------------------------------------------
+- Passenger-initiated cancellations (not due to IndiGo disruption) are subject to standard cancellation charges as per IndiGo's fare rules, which vary by fare type and how close to departure the cancellation is made.
+- Refunds for such cancellations may be issued as a cash refund or as a "credit shell" (travel credit) depending on the fare conditions and timing.
+- Cancellation and refund requests can be submitted online via the "Cancel Flight" or "Refund Claim" sections of the IndiGo website or app.
+
+CHANGE OF FLIGHT (PASSENGER-INITIATED)
+--------------------------------------------
+- Passengers can change their flight date/time via "Manage Booking" by entering PNR and last name.
+- A fare difference may apply if the new flight has a higher fare than the original booking.
+- Changing the origin or destination city is only possible by cancelling the existing ticket and making a fresh booking, subject to availability and applicable fees.
+- Name changes/transfers to another person are NOT permitted. Only minor spelling corrections in a name are allowed by contacting customer care; full name changes are not permitted.
+
+Source: IndiGo official website (goindigo.in) - Plan B section, accessed 2026.

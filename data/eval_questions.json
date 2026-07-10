@@ -1,0 +1,17 @@
+{
+  "Fixed-size": {
+    "Precision@3": 0.9,
+    "Recall@3": 1.0,
+    "MRR": 1.0
+  },
+  "Recursive": {
+    "Precision@3": 0.9333333333333333,
+    "Recall@3": 1.0,
+    "MRR": 0.95
+  },
+  "Section-aware": {
+    "Precision@3": 0.9,
+    "Recall@3": 1.0,
+    "MRR": 0.95
+  }
+}
