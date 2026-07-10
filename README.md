@@ -1,8 +1,6 @@
 # ✈️ IndiGo Customer Support RAG Assistant
 
 A Retrieval-Augmented Generation (RAG) system that answers customer queries about IndiGo airline policies — baggage, cancellation/refunds, check-in, and food — using semantic search over official policy documents, with grounded, citation-backed responses and hallucination prevention.
-
-## 🖼️ Demo
 ![App Screenshot](screenshots/app_demo.png)
 
 ##  Motivation
