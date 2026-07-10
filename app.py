@@ -5,9 +5,32 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 from vectorstore import get_chroma_client, get_or_create_collection
 from generation import generate_answer
+from chunking import load_documents, chunk_fixed_size, chunk_recursive, chunk_by_section
+from vectorstore import index_chunks
 
 st.set_page_config(page_title="IndiGo RAG Assistant", page_icon="✈️", layout="centered")
 
+# --- Auto-index on first run (for cloud deployment where chroma_db doesn't persist from local) ---
+@st.cache_resource
+def ensure_indexed():
+    client = get_chroma_client()
+    docs = load_documents(os.path.join(os.path.dirname(__file__), "data"))
+
+    collections_config = {
+        "airline_policy_fixed": chunk_fixed_size,
+        "airline_policy_recursive_v2": chunk_recursive,
+        "airline_policy_section": chunk_by_section,
+    }
+
+    for coll_name, chunk_fn in collections_config.items():
+        collection = get_or_create_collection(client, coll_name)
+        if collection.count() == 0:  # only index if empty
+            chunks = chunk_fn(docs)
+            index_chunks(collection, chunks, strategy_name=coll_name)
+
+    return client
+
+client = ensure_indexed()
 st.title("✈️ IndiGo Customer Support Assistant")
 st.caption("A RAG-based assistant answering questions from IndiGo's official policy documents — baggage, cancellation, check-in, and food.")
 
@@ -34,7 +57,6 @@ st.sidebar.markdown(
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-client = get_chroma_client()
 collection = get_or_create_collection(client, strategy_map[selected_strategy])
 
 # Display chat history
