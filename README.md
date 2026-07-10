@@ -2,6 +2,9 @@
 
 A Retrieval-Augmented Generation (RAG) system that answers customer queries about IndiGo airline policies — baggage, cancellation/refunds, check-in, and food — using semantic search over official policy documents, with grounded, citation-backed responses and hallucination prevention.
 
+## 🖼️ Demo
+![App Screenshot](screenshots/app_demo.png)
+
 ##  Motivation
 
 Airline customer support chatbots need very high factual accuracy — an incorrectly stated baggage or cancellation policy can be costly (e.g., the 2024 Air Canada case where a chatbot's incorrect refund policy statement was legally binding on the airline). This project builds a domain-specific RAG pipeline with a strong grounding guardrail: the system explicitly says "I don't know" rather than fabricating an answer, and every response cites its source document.
